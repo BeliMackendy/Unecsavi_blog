@@ -1,0 +1,95 @@
+body {
+  background: url("images/img6.jpg") no-repeat;  
+}
+#container {
+  width: 90%;
+  margin: auto;
+}
+/* Header */
+
+#header {
+  height: 160px;
+  /* border: 1px solid black; */
+  background-color: white;
+  display: block;
+  border-radius: 10px 10px 0 0;
+}
+#logo {
+  background: url("images/logo.png") no-repeat;
+  width: 290px;
+  height: 110px;
+  margin: auto;
+  position: relative;
+  top: 3px;
+}
+#titre {
+  height: 33px;
+  margin: auto;
+  padding-top: 13px;
+  background-color: black;
+  opacity: 0.7;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  top: 5px;
+}
+/* End Header */
+
+/* Image */
+#image {
+  background-image: url("images/img1.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%; /* adjust as needed */
+  height: 300px; /* adjust as needed */
+  margin-top: 2px;
+  animation-name: change;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 7s;
+}
+
+@keyframes change{
+  0%{
+    background-image: url("images/img1.jpeg");
+  }
+  25%{
+    background-image: url("images/img2.jpeg");
+  }
+  50%{
+    background-image: url("images/img3.jpeg");
+  }
+  75%{
+    background-image: url("images/img4.jpeg");
+  }
+  100%{
+    background-image: url("images/img5.jpeg");
+  }
+}
+/* End Image */
+
+/* Flex-conatiner */
+.flex-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  /* align-items: center; */
+  margin-top: 15px;
+}
+.flex-item {
+  width: 300px;
+  border: 1px solid black;
+  height: 150px;
+}
+.flex-item h4 {
+  margin: 0;
+  background-color: black;
+  opacity: 0.5;
+  color: white;
+}
+/* End Flex-container */
